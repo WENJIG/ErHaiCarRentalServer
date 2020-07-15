@@ -1,0 +1,70 @@
+D:\Document\WenJig\Code\IdeaProjects\ErHaiCarRentalServer
+     |----ErHaiCarRentalServer.iml
+     |----lib                                                                               引用外部jar包
+          |----fastjson-1.2.46.jar                                                          fastjson
+          |----ojdbc14_11g.jar
+     |----src
+          |----dao                                                                          数据库连接层
+               |----AccountDao.java
+               |----BaseDao.java
+               |----CarBrandDao.java
+               |----CarCategoryDao.java
+               |----CarDao.java
+               |----CarModelDao.java
+               |----impl
+                    |----AccountDaoImpl.java
+                    |----CarBrandDaoImpl.java
+                    |----CarCategoryDaoImpl.java
+                    |----CarDaoImpl.java
+                    |----CarModelDaoDaoImpl.java
+                    |----odbc.properties
+                    |----OracleDao.java
+                    |----RecordDaoImpl.java
+                    |----RecordDao.java
+                    |----ResultHandle.java
+          |----data                                                                         数据模型层
+               |----domain
+                    |----AccountBaseInfo.java
+                    |----AllBaseCarDataDomain.java
+                    |----AllCarDataDomain.java
+                    |----BeCutCar.java
+                    |----FindPageInit.java
+                    |----FromClientMessage.java
+                    |----LoginDomain.java
+                    |----RankCarDomain.java
+                    |----ResponseLoginDomain.java
+                    |----SetCarIsLockDomain.java
+                    |----ToClientMessage.java
+                    |----UpdateCarPriceDomain.java
+               |----entity                                                                  数据表实体
+                    |----Account.java
+                    |----Car.java
+                    |----CarBrand.java
+                    |----CarCategory.java
+                    |----CarModel.java
+                    |----Record.java
+                    |----Role.java
+          |----service                                                                      服务层
+               |----AccountService.java
+               |----CarService.java
+               |----impl
+                    |----AccountServiceImpl.java
+                    |----CarServiceImpl.java
+                    |----LoginManagerImpl.java
+                    |----RecordServiceImpl.java
+                    |----ServerManager.java
+                    |----LoginManager.java
+                    |----RecordService.java
+          |----shell                                                                        服务路由层
+               |----AccountController.java
+               |----CarController.java
+               |----RecordController.java
+               |----RunServerSystem.java
+               |----ScanController.java
+               |----ServerSystem.java
+          |----util                                                                        通用工具层
+               |----JsonUtil.java
+               |----KeyUtil.java
+               |----MoneyUtil.java
+               |----SystemDateFormat.java
+               |----structure_diagram.txt
